@@ -1,19 +1,14 @@
-import { RotatingLines } from 'react-loader-spinner';
+import { FallingLines } from 'react-loader-spinner';
 import css from './Loader.module.css';
 
 export const Loader = () => {
   return (
     <div className={css.loaderWrap}>
-      <RotatingLines
+      <FallingLines
+        color="#0000FF"
+        width="100"
         visible={true}
-        height="96"
-        width="96"
-        color="grey"
-        strokeWidth="5"
-        animationDuration="0.75"
-        ariaLabel="rotating-lines-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
+        ariaLabel="falling-circles-loading"
       />
     </div>
   );
